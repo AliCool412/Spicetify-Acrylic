@@ -4,7 +4,7 @@ Author : [Ali Cool](https://github.com/AliCool412)
 
 ## About
 
-Theeme for Spicetify inspired by Groove Music App, dark mode only.
+Theme for Spicetify Inspired by Windows 10's Groove Music App, for dark mode only.
 
 Best used with [CEF/Spotify Tweaks](https://windhawk.net/mods/cef-titlebar-enabler-universal) windhawk mod, to allow for transparency implementation.
 
