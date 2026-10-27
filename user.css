@@ -322,8 +322,9 @@ dialog .encore-light-theme,
 .otkNTxq0HYA5myraxyPM,
 .ZLLC2GclD3PmvhLb2nKg,
 .vBApP4_Oa8AOZwx2NEvV{
-  background: #2B2B2B !important;
+  background: #000000 !important;
   width: 100.6% !important;
+  border-radius: 0px !important;
 }
 
 /* This one's for the expanded "Your Library" section, DO NOT use the class name of the unexpanded state. */
