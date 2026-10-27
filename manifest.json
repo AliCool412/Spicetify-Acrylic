@@ -1,11 +1,11 @@
 {
     "name": "Spicetify Acrylic",
-    "description": "Theme Inspired by Groove Music",
+    "description": "Theme inspired by Groove Music.",
     "preview": "Preview.png",
     "readme": "README.md",
     "usercss": "user.css",
     "schemes": "color.ini",
-    "include": ["https://cdn.jsdelivr.net/gh/AliCool412/Spicetify-Mica@main/theme.js"],
+    "include": ["https://cdn.jsdelivr.net/gh/AliCool412/Spicetify-Acrylic@main/theme.js"],
     "authors": [
         {
             "name": "Ali Cool",
