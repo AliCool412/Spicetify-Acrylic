@@ -177,16 +177,6 @@ div:has(> [data-testid="now-playing-bar"]){
 
 /* This one's also for artist pages if I'm not wrong. */
 
-.main-topBar-container,
-.ap_ioWdVFWJkrRicJB8C,
-[data-testid="topbar"]{
-  margin-left: 0.5% !important;
-  width: 99% !important;
-  margin-top: 0.5% !important;
-}
-
-/* This one's for the aforementioned "Main TopBar". */
-
 .zyugqDUpsiWa8v7oczU1,
 .CpEaNOB66nFcZNUZA2wg,
 .rl0QlbVbrvgO0fB5Pkua,
