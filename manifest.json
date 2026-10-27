@@ -1,0 +1,16 @@
+{
+    "name": "Spicetify Mica",
+    "description": "Enables Utilization of Windows 11 Mica Backdrop.",
+    "preview": "Preview.png",
+    "readme": "README.md",
+    "usercss": "user.css",
+    "schemes": "color.ini",
+    "include": ["https://cdn.jsdelivr.net/gh/AliCool412/Spicetify-Mica@main/theme.js"],
+    "authors": [
+        {
+            "name": "Ali Cool",
+            "url": "https://github.com/AliCool412"
+        }
+    ],
+    "tags": ["transparent", "dark"]
+}
