@@ -3,7 +3,7 @@
 try {
     const whModule = cancelEsperantoCall('ctewh');
     whModule.extendFrame(-1, -1, -1, -1);
-    whModule.setBackdrop('mica');
+    whModule.setBackdrop('acrylic');
 } catch {}
 
 
