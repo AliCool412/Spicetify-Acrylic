@@ -397,6 +397,8 @@ svg:hover{
 .e-10860-form-input,
 img:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *),
 .view-homeShortcutsGrid-shortcut,
+a,
+button,
 .searchbar-bar,
 [role="row"] > * {
   border-radius: 0px !important;
