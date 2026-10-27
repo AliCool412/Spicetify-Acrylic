@@ -395,11 +395,12 @@ svg:hover{
 .e-10860-legacy-box,
 .e-101040-form-input,
 .e-10860-form-input,
-img:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *),
+img:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *),
 .view-homeShortcutsGrid-shortcut,
 a,
 button,
 .searchbar-bar,
+[data-testid="now-playing-widget-v2"] > *,
 [role="row"] > * {
   border-radius: 0px !important;
 }
