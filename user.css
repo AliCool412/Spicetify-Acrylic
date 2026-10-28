@@ -407,7 +407,9 @@ button,
 .searchbar-bar,
 [data-testid="now-playing-widget-v2"] > *,
 [role="row"] > *,
-[role="listbox"] > *{
+[role="listbox"] > *,
+.e-101040-legacy-list-row__header-side-flex > * > *,
+.e-10860-legacy-list-row__header-side-flex > * > * {
   border-radius: 0px !important;
 }
 
