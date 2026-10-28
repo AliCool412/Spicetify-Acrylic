@@ -166,6 +166,7 @@ div:has(> [data-testid="now-playing-bar"]){
 .WAc4pJu2EshSMM7cQK9c,
 .e-101040-overflow-wrap-anywhere{
   box-shadow: 0 0px 0px !important;
+  border-radius: 0px !important;
 }
 
 /* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
@@ -278,6 +279,7 @@ div:has(> [data-testid="now-playing-bar"]){
 dialog button,
 [role="dialog"] button{
   background: transparent !important;
+  border-radius: 0px !important;
 }
 
 /* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
@@ -290,6 +292,7 @@ dialog button,
 /* This one's to make dialog boxes have a background. */
 
 dialog,
+dialog > *,
 dialog .encore-light-theme,
 .ReactModalPortal [role="dialog"]{
   background: #2B2B2B !important;
