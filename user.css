@@ -406,7 +406,8 @@ a,
 button,
 .searchbar-bar,
 [data-testid="now-playing-widget-v2"] > *,
-[role="row"] > * {
+[role="row"] > *,
+[role="listbox"] > *{
   border-radius: 0px !important;
 }
 
