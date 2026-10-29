@@ -32,7 +32,7 @@ div:has(> [data-testid="now-playing-bar"]){
 [data-tippy-root],
 #context-menu,
 .main-type-tooltip{
-  background: #00000077 !important;
+  background: #202020 !important;
   border-radius: 0px !important;
 }
 
