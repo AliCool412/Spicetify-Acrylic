@@ -32,7 +32,7 @@ div:has(> [data-testid="now-playing-bar"]){
 [data-tippy-root],
 #context-menu,
 .main-type-tooltip{
-  background: var(--background-elevated-base) !important;
+  background: #00000077 !important;
   border-radius: 0px !important;
 }
 
@@ -131,6 +131,7 @@ div:has(> [data-testid="now-playing-bar"]){
 .B_NENXC7AHTEKsYhv3qv{
   --background-base: #00000077 !important;
   border-radius: 0px !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
@@ -354,6 +355,7 @@ dialog .encore-light-theme,
 .Dropdown-menu{
   background: #2B2B2B !important;
   max-height: max-content !important;
+  border-radius: 0px !important;
 }
 
 .Dropdown-option:hover{
