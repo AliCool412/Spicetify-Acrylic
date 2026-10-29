@@ -15,6 +15,12 @@
 
 /* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
 
+:root *{
+  border-radius: 0px !important;
+}
+
+/* This is for ALL corners to be sharp */
+
 .main-view-container,
 div:has(> [data-testid="now-playing-bar"]){
   background: #00000077 !important;
