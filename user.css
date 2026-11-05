@@ -419,8 +419,7 @@ button,
 /* This is for sharp corners */
 
 
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
-.marketplace-add-snippet-btn{
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
   fill: #000000 !important;
 }
 .marketplace-add-snippet-btn,
@@ -429,5 +428,7 @@ button,
 .marketplace-card-desc{
   font-family: var(--encore-body-font-stack) !important;
 }
-
+.marketplace-add-snippet-btn{
+  color: #000000 !important;
+}
 /* This is to fix some fonts and whatnot */
