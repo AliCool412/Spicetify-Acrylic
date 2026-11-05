@@ -428,8 +428,8 @@ button,
 .marketplace-card-desc{
   font-family: var(--encore-body-font-stack) !important;
 }
-.marketplace-add-snippet-btn,
-.marketplace-header__button{
+.marketplace-add-snippet-btn ,
+.marketplace-header__button {
   color: #000000 !important;
 }
 /* This is to fix some fonts and whatnot */
