@@ -435,5 +435,20 @@ button,
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
+input {
+  background: #2B2B2B99 !important;
+}
 
 /* This is to fix some fonts and whatnot */
+
+.marketplace-tabBar{
+  width: 500px !important;
+}
+
+/* This is to fix the width of marketplace navigation bar */
+
+.Root__top-container:has(.yQCyOSVcMCen_NJKPHB6.SGtaKJxGTMVNxbooL6MS) .main-view-container,
+.Root__top-container:has(.yQCyOSVcMCen_NJKPHB6.SGtaKJxGTMVNxbooL6MS) [data-testid=topbar]{
+  display: none !important;
+}
+/* This is to make sure the main view becomes transparent when library expanded */
