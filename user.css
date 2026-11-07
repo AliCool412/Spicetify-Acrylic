@@ -167,7 +167,6 @@ div:has(> [data-testid="now-playing-bar"]){
 .WAc4pJu2EshSMM7cQK9c,
 .e-101040-overflow-wrap-anywhere{
   box-shadow: 0 0px 0px !important;
-  border-radius: 0px !important;
 }
 
 /* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
@@ -402,8 +401,7 @@ svg:hover{
 .e-101040-form-input,
 .e-10860-form-input,
 .main-cardImage-imageWrapper,
-img:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-image),
-:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-image, .progress-bar),
+:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-imageContainer *, .progress-bar *, .main-entityHeader-image, .main-entityHeader-image *, .main-entityHeader-shadow),
 .view-homeShortcutsGrid-shortcut,
 a,
 button,
@@ -412,7 +410,11 @@ button,
 [role="row"] > *,
 [role="listbox"] > *,
 .e-101040-legacy-list-row__header-side-flex > * > *,
-.e-10860-legacy-list-row__header-side-flex > * > * {
+.e-10860-legacy-list-row__header-side-flex > * > *,
+[data-testid="playlist-image"] > .main-entityHeader-image,
+[data-testid="playlist-image"] > .main-entityHeader-image > img,
+[aria-label="View album artwork"] > .main-entityHeader-image,
+[aria-label="View album artwork"] > .main-entityHeader-image > img{
   border-radius: 0px !important;
 }
 
@@ -437,19 +439,12 @@ button,
 }
 input:not([aria-label="Search"] input) {
   background: #2B2B2B99 !important;
-  border-radius: 500px !important;
 }
 textarea{
   background: #2B2B2B99 !important;
 }
 
 /* This is to fix some fonts and whatnot */
-
-.marketplace-tabBar{
-  width: 500px !important;
-}
-
-/* This is to fix the width of marketplace navigation bar */
 
 .Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) .main-view-container,
 .Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) [data-testid="topbar"] {
