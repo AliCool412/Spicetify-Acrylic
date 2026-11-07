@@ -390,8 +390,8 @@ svg:hover{
 }
 
 .Root__top-container{
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
   }
 
 /* This is to even out the width of main view after the removal of Peek NPV */
@@ -402,8 +402,8 @@ svg:hover{
 .e-101040-form-input,
 .e-10860-form-input,
 .main-cardImage-imageWrapper,
-img:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *),
-:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *),
+img:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-image),
+:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-image, .progress-bar),
 .view-homeShortcutsGrid-shortcut,
 a,
 button,
