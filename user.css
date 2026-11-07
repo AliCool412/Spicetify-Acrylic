@@ -295,7 +295,7 @@ dialog button,
 dialog,
 dialog > *,
 dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]{
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
   background: #2B2B2B !important;
   border-radius: 0px !important;
 }
@@ -435,7 +435,11 @@ button,
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input {
+input:not([aria-label="Search"] input) {
+  background: #2B2B2B99 !important;
+  border-radius: 500px !important;
+}
+textarea{
   background: #2B2B2B99 !important;
 }
 
