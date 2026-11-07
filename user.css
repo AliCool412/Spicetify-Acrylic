@@ -380,19 +380,6 @@ svg:hover{
 
 /* This is to hide the NPV Peek */
 
-[id="main-view"]{
-  margin-left: 12px !important;
-  margin-right: 12px !important;
-  border-radius: 0px !important;
-}
-
-.Root__top-container{
-  padding-left: 4px !important;
-  padding-right: 4px !important;
-  }
-
-/* This is to even out the width of main view after the removal of Peek NPV */
-
 .main-card-card,
 .e-101040-legacy-box,
 .e-10860-legacy-box,
