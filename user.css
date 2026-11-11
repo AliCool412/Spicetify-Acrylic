@@ -353,6 +353,7 @@ dialog .encore-light-theme,
   background: #2B2B2B !important;
   max-height: max-content !important;
   border-radius: 0px !important;
+  box-shadow: 0 6px 8px #0003 !important;
 }
 
 .Dropdown-option:hover{
@@ -435,3 +436,8 @@ textarea,
   display: none !important;
 }
 /* This is to make sure the main view becomes transparent when library expanded */
+
+.Root__top-container{ --panel-gap: 0px !important;}
+.Root__globalNav{ height: 64px !important;}
+
+/* This removes the panel gap to give the true Windows 10 vibes. */
