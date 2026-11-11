@@ -422,11 +422,10 @@ button,
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input:not([aria-label="Search"] input) {
-  background: #2B2B2B99 !important;
-}
-textarea{
-  background: #2B2B2B99 !important;
+input:not([aria-label="Search"] input, [aria-label^="Change decibels"]),
+textarea,
+.marketplace-code-editor{
+  background: #00000077 !important;
 }
 
 /* This is to fix some fonts and whatnot */
