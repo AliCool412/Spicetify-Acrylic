@@ -387,7 +387,7 @@ svg:hover{
 .e-101040-form-input,
 .e-10860-form-input,
 .main-cardImage-imageWrapper,
-:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-imageContainer *, .progress-bar *, .main-entityHeader-image, .main-entityHeader-image *, .main-entityHeader-shadow),
+:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-imageContainer *, .progress-bar *, .main-entityHeader-image, .main-entityHeader-image *, .main-entityHeader-shadow, span),
 .view-homeShortcutsGrid-shortcut,
 a,
 button,
