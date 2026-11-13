@@ -28,7 +28,6 @@ div:has(> [data-testid="now-playing-bar"]){
 /* This one's for the main view and playback bar being a bit less translucent than the rest */
 
 .main-contextMenu-menu,
-.main-contextMenu-menuItem,
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
@@ -498,7 +497,6 @@ svg{
 /* This one's for the main view and playback bar being a bit less translucent than the rest */
 
 .main-contextMenu-menu,
-.main-contextMenu-menuItem,
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
