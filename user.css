@@ -11,6 +11,10 @@
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
   --background-highlight: #00000044 !important;
+  --spice-player: #00000011 !important;
+  --spice-card: #00000099 !important;
+  --spice-tab-active: #00000099 !important;
+  --spice-main-elevated: #00000099 !important;
 }
 
 :root *{
@@ -31,9 +35,16 @@ div:has(> [data-testid="now-playing-bar"]){
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
+[role="menu"],
 [data-tippy-root],
 #context-menu,
-.main-type-tooltip{
+.main-type-tooltip,
+.ReactModalPortal .encore-light-theme,
+dialog,
+dialog .encore-light-theme,
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
+[role="alert"] [class*="legacy-box"],
+.spicetify-popup-container{
   background: #202020 !important;
   border-radius: 0px !important;
 }
@@ -66,8 +77,7 @@ div:has(> [data-testid="now-playing-bar"]){
 
 /* This is for artists' pages banners being used as the full page's background, as there is no way to implement a dynamically changing backdrop with the banner picture of artists other than to make the entire background be the artist's banner, if you have a better implementation, please enlighten me, or do it yourself, this isn't sarcastic or demeaning btw I'm being so fr here. */
 
-.e-10860-overflow-wrap-anywhere,
-.e-101040-overflow-wrap-anywhere{
+[class*="overflow-wrap-anywhere"]{
   --background-highlight: transparent !important;
   --background-press: transparent !important;
   --spice-button-active: transparent !important;
@@ -140,7 +150,6 @@ div:has(> [data-testid="now-playing-bar"]){
 
 .XigLZTcvt6fiLkosJfYh,
 .miQxkQPT6ObnldFON6FU,
-.e-10860-overflow-wrap-anywhere,
 .zyugqDUpsiWa8v7oczU1,
 .At_PezR11Vm2qa_1CMwg,
 .dsRqpLP2eKuUJEmFhkMt,
@@ -167,7 +176,7 @@ div:has(> [data-testid="now-playing-bar"]){
 .b_2tITQ1zWWjRCV_c9sW,
 .ArpdzWdgRW_8lwpikPGW,
 .WAc4pJu2EshSMM7cQK9c,
-.e-101040-overflow-wrap-anywhere,
+[class*="overflow-wrap-anywhere"],
 .main-contextMenu-menuItem{
   box-shadow: 0 0px 0px !important;
 }
@@ -195,14 +204,13 @@ div:has(> [data-testid="now-playing-bar"]){
 
 .YQ0uPtmHEvHsS8MszwpG,
 .Paf_Idn_uHcJizNgwOAs,
-.e-10860-button__icon-wrapper,
 .T0rMpAnelW_8YG9TEYXX,
 .VKQ4sdB5MUwV2yKJRQCY,
 .bUVkyYuHPJ19V664vzfA,
 .GGdJC1J_rstFzsYLyQhu,
 .DqIqydL5_xt1AQWeNGNR,
 .fF97jAvlGYYHbI3_vPlV,
-.e-101040-button__icon-wrapper,
+[class*="button__icon-wrapper"],
 .view-homeShortcutsGrid-equaliserImage,
 [aria-label="Equalizer"]{
   filter: saturate(0%) !important;
@@ -215,8 +223,7 @@ div:has(> [data-testid="now-playing-bar"]){
 
 /* As I mentioned earlier, the marketplace header is getting a similar treatment */
 
-.e-10860-legacy-button-primary,
-.e-101040-legacy-button-primary{
+[class*="legacy-button-primary"]{
  --encore-graphic-size-decorative-base: 48px !important;
 }
 
@@ -239,19 +246,11 @@ div:has(> [data-testid="now-playing-bar"]){
 /* This one's for the updated create button (with the playlist/folder/jam/mixed playlist/blend options). */
 
 .g6z9DmqJ8tbdUBNlRC4e,
-.e-10860-legacy-button,
-.e-101040-legacy-button{
+[class*="legacy-button"]{
   --text-bright-accent: var(--current-color) !important;
 }
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
-
-[role="alert"] .e-10860-legacy-box,
-[role="alert"] .e-101040-legacy-box{
-  background: #2B2B2B !important;
-}
-
-/*  And this one's for the background of the aforementioned popups. */
 
 .BTXPtQEzifZvDSNbfM4U:before,
 .BTXPtQEzifZvDSNbfM4U:after,
@@ -389,10 +388,8 @@ svg:hover{
 /* This is to hide the NPV Peek */
 
 .main-card-card,
-.e-101040-legacy-box,
-.e-10860-legacy-box,
-.e-101040-form-input,
-.e-10860-form-input,
+[class*="legacy-box"],
+[class*="form-input"],
 .main-cardImage-imageWrapper,
 :root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-imageContainer *, .progress-bar *, .main-entityHeader-image, .main-entityHeader-image *, .main-entityHeader-shadow, label span),
 .view-homeShortcutsGrid-shortcut,
@@ -402,8 +399,7 @@ button,
 [data-testid="now-playing-widget-v2"] > *,
 [role="row"] > *,
 [role="listbox"] > *,
-.e-101040-legacy-list-row__header-side-flex > * > *,
-.e-10860-legacy-list-row__header-side-flex > * > *,
+[class*="legacy-list-row__header-side-flex"] > * > *,
 [data-testid="playlist-image"] > .main-entityHeader-image,
 [data-testid="playlist-image"] > .main-entityHeader-image > img,
 [aria-label="View album artwork"] > .main-entityHeader-image,
@@ -474,6 +470,8 @@ textarea,
   --spice-rgb-text: #2C2C2C !important;
   --spice-player: #FFFFFF !important;
   --spice-tab-active: #2C2C2C2C
+  --spice-player: #00000011 !important;
+  --spice-main-elevated: #EEEEEE !important;
 }
 
 :root *{
@@ -485,7 +483,7 @@ svg{
   fill: #121212 !important;
 } 
   
-/* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
+/* This above is the baseline for making everything transparent. */
 
 .main-view-container,
 .main-nowPlayingBar-nowPlayingBar{
@@ -504,13 +502,16 @@ svg{
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
+[role="menu"],
 [data-tippy-root],
 #context-menu,
 .main-type-tooltip,
 .ReactModalPortal .encore-light-theme,
 dialog,
 dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
+[role="alert"] [class*="legacy-box"],
+.spicetify-popup-container{
   background: #FFFFFF !important;
   border-radius: 8px !important;
   --background-base: #FFFFFF !important;
@@ -531,13 +532,6 @@ dialog .encore-light-theme,
 }
 
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
-
-[role="alert"] .e-10860-legacy-box,
-[role="alert"] .e-101040-legacy-box{
-  background: #FFFFFF !important;
-}
-
-/*  And this one's for the background of the aforementioned popups. */
 
 .SGtaKJxGTMVNxbooL6MS,
 .otkNTxq0HYA5myraxyPM,
@@ -576,8 +570,7 @@ svg:hover{
 /* This is to make svg icons fully black when hovered */
 
 .marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
-.e-101040-legacy-list-row__header-side-flex svg,
-.e-10860-legacy-list-row__header-side-flex svg{
+[class*="legacy-list-row__header-side-flex"] svg{
   fill: #FFFFFF !important;
 }
 .marketplace-add-snippet-btn ,
@@ -601,4 +594,3 @@ textarea,
 
 /* This is to fix some fonts and whatnot */
 }
-f
