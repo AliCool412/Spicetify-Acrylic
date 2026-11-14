@@ -31,7 +31,6 @@ div:has(> [data-testid="now-playing-bar"]){
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
-[role="menu"],
 [data-tippy-root],
 #context-menu,
 .main-type-tooltip{
@@ -282,7 +281,8 @@ div:has(> [data-testid="now-playing-bar"]){
 
 dialog button,
 [role="dialog"] button,
-.main-contextMenu-menuItem{
+.main-contextMenu-menuItem,
+[role="menu"]{
   background: transparent !important;
   border-radius: 0px !important;
 }
@@ -499,11 +499,9 @@ svg{
 /* This one's for the main view and playback bar being a bit less translucent than the rest */
 
 .main-contextMenu-menu,
-.main-contextMenu-menuItem,
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
-[role="menu"],
 [data-tippy-root],
 #context-menu,
 .main-type-tooltip,
@@ -575,7 +573,9 @@ svg:hover{
 
 /* This is to make svg icons fully black when hovered */
 
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
+.e-101040-legacy-list-row__header-side-flex svg,
+.e-10860-legacy-list-row__header-side-flex svg{
   fill: #FFFFFF !important;
 }
 .marketplace-add-snippet-btn ,
@@ -585,13 +585,12 @@ svg:hover{
 input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
   background: #EEEEEE !important;
   backdrop-filter: blur(10px) !important;
-  border-radius: 32px !important;
   border: 1px solid #00000022 !important;
 }
 textarea,
 .marketplace-code-editor{
   background: #EEEEEE !important;
-  border-radius: 16px !important;
+  border: 1px solid #00000022 !important;
 }
 [role="listbox"] > *{
   background: #EEEEEE !important;
@@ -599,3 +598,4 @@ textarea,
 
 /* This is to fix some fonts and whatnot */
 }
+f
