@@ -470,7 +470,7 @@ textarea,
   --spice-card: #DDDDDD !important;
   --spice-rgb-text: #2C2C2C !important;
   --spice-player: #FFFFFF !important;
-  --spice-tab-active: #2C2C2C2C
+  --spice-tab-active: #2C2C2C2C !important;
   --spice-player: #00000011 !important;
   --spice-main-elevated: #EEEEEE !important;
 }
