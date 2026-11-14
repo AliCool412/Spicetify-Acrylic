@@ -28,7 +28,6 @@ div:has(> [data-testid="now-playing-bar"]){
 /* This one's for the main view and playback bar being a bit less translucent than the rest */
 
 .main-contextMenu-menu,
-.main-contextMenu-menuItem,
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
@@ -282,7 +281,8 @@ div:has(> [data-testid="now-playing-bar"]){
 /* This one's for fixing the position of the TopBar of the homepage. */
 
 dialog button,
-[role="dialog"] button{
+[role="dialog"] button,
+.main-contextMenu-menuItem{
   background: transparent !important;
   border-radius: 0px !important;
 }
@@ -428,7 +428,7 @@ button,
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input:not([aria-label="Search"] input, [aria-label^="Change decibels"]),
+input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input),
 textarea,
 .marketplace-code-editor{
   background: #00000077 !important;
@@ -582,7 +582,7 @@ svg:hover{
 .marketplace-header__button {
   background: #FFFFFF !important;
 }
-input:not([aria-label="Search"] input, [aria-label^="Change decibels"]){
+input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
   background: #EEEEEE !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 32px !important;
