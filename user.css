@@ -581,6 +581,7 @@ svg:hover{
 .marketplace-add-snippet-btn ,
 .marketplace-header__button {
   background: #FFFFFF !important;
+  box-shadow: 0 6px 8px #0003 !important;
 }
 input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
   background: #EEEEEE !important;
