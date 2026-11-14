@@ -47,6 +47,7 @@ dialog .encore-light-theme,
 .spicetify-popup-container{
   background: #202020 !important;
   border-radius: 0px !important;
+  box-shadow: 0 6px 8px #0003 !important;
 }
 
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
@@ -488,7 +489,7 @@ svg{
 .main-view-container,
 .main-nowPlayingBar-nowPlayingBar{
   background: #eeeeee !important;
-  border-radius: 8px !important;
+  border-radius: 0px !important;
   border: 1px solid #00000022 !important;
 }
 
@@ -513,7 +514,7 @@ dialog .encore-light-theme,
 [role="alert"] [class*="legacy-box"],
 .spicetify-popup-container{
   background: #FFFFFF !important;
-  border-radius: 8px !important;
+  border-radius: 0px !important;
   --background-base: #FFFFFF !important;
   box-shadow: 0 6px 8px #0003 !important;
 }
@@ -527,7 +528,7 @@ dialog .encore-light-theme,
 .B_NENXC7AHTEKsYhv3qv{
   background: #FFFFFFCC !important;
   backdrop-filter: blur(10px) !important;
-  border-radius: 8px !important;
+  border-radius: 0px !important;
   border: 1px solid #00000022 !important;
 }
 
