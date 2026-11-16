@@ -159,10 +159,13 @@ dialog .encore-light-theme,
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
-[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4){
-  display: none !important;
+[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4) > *,
+[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4),
+[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4) > *:after{
+  background: transparent !important;
+  --background-base: transparent !important;
 }
-/* This one's for hiding TopBar of the homepage since I genuinely can't fix it. */
+/* This one's for the TopBar of the homepage. */
 
 dialog button,
 [role="dialog"] button,
