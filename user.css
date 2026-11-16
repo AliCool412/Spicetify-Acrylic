@@ -6,8 +6,8 @@
   --spice-button-active: none !important;
   --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
-  --encore-icon-fill: var(--current-color) !important;
-  --text-bright-accent: var(--current-color) !important;
+  --encore-icon-fill: var(--spice-text) !important;
+  --text-bright-accent: var(--spice-text) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
   --background-highlight: #00000044 !important;
@@ -94,8 +94,8 @@ dialog .encore-light-theme,
 [class*="carouselButton"],
 [class*="actionBar"]:not([role*="listbox"] *),
 [data-testid="topbar"] > * > :nth-child(1),
-[aria-label*="Spotify"] > div > *,
-[aria-label*="Spotify"] > div > :nth-child(4),
+[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > *,
+[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4),
 [data-shelf="carousel"] *:before,
 [data-shelf="carousel"] *:after,
 [aria-label="Create"]{
@@ -124,7 +124,7 @@ dialog .encore-light-theme,
 
 /* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
 
-[src*="equaliser-animated-green.gif"],
+[src*="equaliser"],
 [class*="button__icon-wrapper"],
 [class*="equaliser"],
 [aria-label="Equalizer"]{
@@ -151,12 +151,12 @@ dialog .encore-light-theme,
 /* This here is a fix for icons inside menus looking a bit off in scaling under 100%. */
 
 [class*="legacy-button"]{
-  --text-bright-accent: var(--current-color) !important;
+  --text-bright-accent: var(--spice-text) !important;
 }
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
-[aria-label*="Spotify"] > div > :nth-child(4){
+[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4){
   display: none !important;
 }
 /* This one's for hiding TopBar of the homepage since I genuinely can't fix it. */
@@ -300,8 +300,8 @@ textarea,
   --background-noise: #FFFFFF99 !important;
   --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
-  --encore-icon-fill: var(--current-color) !important;
-  --text-bright-accent: var(--current-color) !important;
+  --encore-icon-fill: var(--spice-text) !important;
+  --text-bright-accent: var(--spice-text) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
   --spice-button-active: none !important;
