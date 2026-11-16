@@ -3,7 +3,7 @@
   --spice-sidebar: none !important;
   --spice-main: none !important;
   --background-noise: #00000099 !important;
-  --spice-button-active: none !important;
+  --spice-button-active: var(--spice-subtext) !important;
   --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
   --encore-icon-fill: var(--spice-text) !important;
@@ -304,7 +304,7 @@ textarea,
   --text-bright-accent: var(--spice-text) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
-  --spice-button-active: none !important;
+  --spice-button-active: var(--spice-subtext) !important;
   --spice-text: #121212 !important;
   --spice-subtext: #535353 !important;
   --text-base: #121212 !important;
