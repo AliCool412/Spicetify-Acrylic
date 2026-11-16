@@ -46,7 +46,7 @@ div:has(> [data-testid="now-playing-bar"]){
 .ReactModalPortal .encore-light-theme,
 dialog,
 dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
+.ReactModalPortal [role="dialog"]:not([class*="overlay"] *),
 [role="alert"] [class*="legacy-box"],
 .spicetify-popup-container,
 .Dropdown-menu,
@@ -59,7 +59,7 @@ dialog .encore-light-theme,
 
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
 
-[data-scroll-size-invariant-class]:has([aria-label="Change visible columns"]) {
+[data-scroll-size-invariant-class] {
   position: static !important;
   background: transparent !important;
 }
@@ -98,7 +98,7 @@ dialog .encore-light-theme,
 [id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4),
 [data-shelf="carousel"] *:before,
 [data-shelf="carousel"] *:after,
-[aria-label="Create"]{
+[id="Desktop_LeftSidebar_Id"] button{
   background: transparent !important;
   fill: transparent !important;
   box-shadow: none !important;
@@ -115,6 +115,7 @@ dialog .encore-light-theme,
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
 
 *:has(img),
+*:has(svg),
 [class*="shadow"],
 [class*="imageContainer"] > *,
 [class*="overflow-wrap-anywhere"],
@@ -127,7 +128,7 @@ dialog .encore-light-theme,
 [src*="equaliser"],
 [class*="button__icon-wrapper"],
 [class*="equaliser"],
-[aria-label="Equalizer"]{
+*:has(> canvas){
   filter: saturate(0%) !important;
 }
 /* This one's to make the playing GIF and equalizer become monochromatic, to blend in with the light grey/white accent color, and also the "added to playlist" GIF. */
@@ -169,8 +170,8 @@ dialog button,
 
 /* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
 
- [data-npv-root="true"] > :nth-child(1),
-[aria-label="Queue"] > :nth-child(1) > :nth-child(1){
+[data-npv-root="true"] > :nth-child(1),
+*:has(> :nth-child(1) > [data-encore-id="tabs"]){
   position: static !important;
   box-shadow: 0 0px 0px !important;
 }
@@ -236,16 +237,14 @@ button,
 [role="listbox"] > *,
 [class*="legacy-list-row__header-side-flex"] > * > *,
 [data-testid="playlist-image"] > .main-entityHeader-image,
-[data-testid="playlist-image"] > .main-entityHeader-image > img,
-[aria-label="View album artwork"] > .main-entityHeader-image,
-[aria-label="View album artwork"] > .main-entityHeader-image > img{
+[data-testid="playlist-image"] > .main-entityHeader-image > img{
   border-radius: 0px !important;
 }
 
 /* This is for sharp corners */
 
 
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id="marketplace-settings-button"] > *) > *{
   fill: #000000 !important;
 }
 .marketplace-add-snippet-btn,
@@ -263,7 +262,7 @@ button,
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input),
+input:not([data-testid*="search-modal-input"], *:has(> canvas) *, .SpicyLyricsModal input),
 textarea,
 .marketplace-code-editor{
    background: var(--input) !important;
@@ -347,7 +346,7 @@ svg{
 .Dropdown-control:hover{
   color: #DDDDDD11 !important;
 }
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id="marketplace-settings-button"] > *) > *{
   fill: #FFFFFF !important;
 }
 
