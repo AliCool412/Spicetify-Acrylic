@@ -143,11 +143,12 @@ dialog .encore-light-theme,
 
 /* As I mentioned earlier, the marketplace header is getting a similar treatment */
 
-[class*="legacy-button-primary"]{
- --encore-graphic-size-decorative-base: 48px !important;
+[data-testid*="action-bar"],
+[data-testid*="topbar"]{
+ --encore-graphic-size-decorative-base: 36px !important;
 }
 
-/* This one's for the now VERY LARGE playlist play button triangle. */
+/* This one's for the now ENLARGED playlist play button triangle. */
 
 #context-menu svg{
   overflow: visible !important;
