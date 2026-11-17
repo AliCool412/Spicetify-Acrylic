@@ -1,6 +1,7 @@
 /* Spicetify Acrylic by AliCool412 */
 :root {
-  --currentcolor: #FFFFFF !important;
+  --currentcolor: var(--spice-text) !important;
+  --spice-button-active: var(--spice-text) !important;
   --spice-main-transition: none !important;
   --spice-sidebar: none !important;
   --spice-main: none !important;
