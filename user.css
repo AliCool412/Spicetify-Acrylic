@@ -388,6 +388,10 @@ svg{
   background-color: #999999 !important;
 }
 
+select {
+  color-scheme: light;
+}
+
 select option,
 select optgroup {
   background-color: var(--popout) !important;
