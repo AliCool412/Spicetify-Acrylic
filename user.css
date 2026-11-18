@@ -1,5 +1,8 @@
 /* Spicetify Acrylic by AliCool412 */
-:root {
+:root,
+body,
+[class*="encore-"],
+[class*="encore-"] * {
   --currentcolor: var(--spice-subtext) !important;
   --spice-button-active: var(--spice-text) !important;
   --spice-main-transition: none !important;
@@ -17,7 +20,8 @@
   --spice-card: #00000099 !important;
   --spice-tab-active: #00000099 !important;
   --spice-main-elevated: #00000099 !important;
- --spice-highlight-elevated: #00000099 !important;
+  --spice-highlight-elevated: #00000099 !important;
+  --text-subdued: #FFFFFF !important;
   --center-ui-bg: #00000077 !important;
   --center-ui-border: none !important;
   --popout: #202020 !important;
@@ -153,8 +157,8 @@ dialog .encore-light-theme,
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
 dialog button,
-[role="dialog"] button,
-[role="dialog"] button *,
+[role*="dialog"] button,
+[role*="dialog"] button *,
 .main-contextMenu-menuItem{
   background: transparent !important;
 }
@@ -310,7 +314,10 @@ input[type="checkbox"] + *{
 /* This is to remove gradients */
 
 @media (prefers-color-scheme: light) {
-:root {
+:root,
+body,
+[class*="encore-"],
+[class*="encore-"] * {
   --background-noise: #FFFFFF99 !important;
   --spice-text: #121212 !important;
   --spice-subtext: #535353 !important;
@@ -323,6 +330,7 @@ input[type="checkbox"] + *{
   --spice-main-elevated: #EEEEEE !important;
   --background-highlight: #AAAAAA99 !important;
   --spice-highlight-elevated: #AAAAAA99 !important;
+  --text-subdued: #222222 !important;
   --center-ui-bg: transparent !important;
   --center-ui-border: 1px solid #00000022 !important;
   --popout: #EEEEEE !important;
