@@ -154,6 +154,7 @@ dialog .encore-light-theme,
 
 dialog button,
 [role="dialog"] button,
+[role="dialog"] button *,
 .main-contextMenu-menuItem{
   background: transparent !important;
 }
