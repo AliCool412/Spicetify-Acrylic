@@ -371,7 +371,7 @@ svg{
 }
 
 .Dropdown-control:hover,
-.main-contextMenu-menuItem button:hover{
+.main-contextMenu-menuItem:hover{
   background: #CCCCCC !important;
 }
 
