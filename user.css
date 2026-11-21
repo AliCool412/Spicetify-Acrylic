@@ -99,7 +99,7 @@ select optgroup {
   background: transparent !important;
 }
 
-/* And this here is to remove the playback bar play button's circle. */
+/* And this here is to remove the playback bar play button's circle background. */
 
 [class*="main-entityHeader"],
 [class*="carouselButton"],
@@ -172,6 +172,7 @@ select optgroup {
 .main-contextMenu-menuItem,
 button{
   background: transparent !important;
+  box-shadow: none !important;
 }
 
 /* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
