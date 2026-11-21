@@ -26,6 +26,7 @@ body,
   --topbar: #202020CC !important;
   --spice-highlight-elevated: #FFFFFF11 !important;
   --background-base: transparent !important;
+  --spice-main-elevated: transparent !important;
 }
 
 /* This is practically a fork from my original mica theme. */
