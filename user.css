@@ -25,6 +25,7 @@ body,
   --input: #00000077 !important;
   --topbar: #202020CC !important;
   --spice-highlight-elevated: #FFFFFF11 !important;
+  --background-base: transparent !important;
 }
 
 /* This is practically a fork from my original mica theme. */
@@ -309,12 +310,6 @@ input[type="checkbox"] + *{
 }
 
 /* This is for toggles */
-
-[style*="--background-base"]{
-  --background-base: transparent !important;
-}
-
-/* This is to remove gradients */
 
 @media (prefers-color-scheme: light) {
 :root,
