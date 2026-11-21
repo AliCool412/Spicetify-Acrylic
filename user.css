@@ -35,7 +35,7 @@ body,
   border: var(--center-ui-border) !important;
 }
 
-:root *:not(.main-view-container, .main-nowPlayingBar-nowPlayingBar, input, input + *){
+:root *:not(.main-view-container, .main-nowPlayingBar-nowPlayingBar, input, input + *, [class*="legacy-button-primary"]){
   border: none !important;
 }
 
@@ -57,6 +57,7 @@ dialog .encore-light-theme,
 .spicetify-popup-container,
 .Dropdown-menu,
 [data-encore-id="popover"],
+.main-actionBar-ActionBarContainer,
 [id="search-dropdown"] > :nth-child(1){
   background: var(--popout) !important;
   border-radius: 0px !important;
@@ -148,8 +149,10 @@ select optgroup {
 
 /* As I mentioned earlier, the marketplace header is getting a similar treatment */
 
-[class*="legacy-button-primary"]{
- --encore-graphic-size-decorative-base: 48px !important;
+[data-testid="action-bar-row"] [class*="legacy-button-primary"],
+[data-testid="player-controls"] [class*="legacy-button-primary"]{
+ --encore-graphic-size-decorative-base: 36px !important;
+ border: 2px solid var(--currentcolor)
 }
 
 /* This one's for the now ENLARGED playlist play button triangle. */
@@ -166,13 +169,8 @@ select optgroup {
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
-dialog button,
-dialog button *,
-[role*="dialog"] button,
-[role*="dialog"] button *,
 .main-contextMenu-menuItem,
-[role="menu"] button,
-[role="menu"] button * {
+button{
   background: transparent !important;
 }
 
@@ -243,10 +241,6 @@ svg:hover,
 
 /* This removes the panel gap to give the true windows 10 vibes, along with the fix of global navbar height. */
 
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id="marketplace-settings-button"] > *) > *{
-  fill: #000000 !important;
-}
-
 .marketplace-add-snippet-btn,
 .marketplace-grid,
 .spicetify-popup button,
@@ -275,10 +269,6 @@ textarea,
 [role="radiogroup"] > *,
 [role="radiogroup"] > * > *{
   background: transparent !important;
-}
-
-[class*="legacy-chip__inner--selected"]{
-  color: #000000 !important;
 }
 
 /* This is to fix some fonts and whatnot */
@@ -370,15 +360,6 @@ svg{
 
 .Dropdown-control:hover{
   background: #DDDDDD !important;
-}
-
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id="marketplace-settings-button"] > *) > *{
-  fill: #FFFFFF !important;
-}
-  
-[class*="legacy-chip__inner--selected"]{
-  color: #FFFFFF !important;
-  -webkit-text-fill-color: #999999 !important;
 }
 
 [data-testid="progress-bar-background"]{
