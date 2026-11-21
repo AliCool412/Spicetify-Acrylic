@@ -170,7 +170,9 @@ dialog button,
 dialog button *,
 [role*="dialog"] button,
 [role*="dialog"] button *,
-.main-contextMenu-menuItem{
+.main-contextMenu-menuItem,
+[role="menu"] button,
+[role="menu"] button *{
   background: transparent !important;
 }
 
