@@ -24,6 +24,7 @@ body,
   --popout: #202020 !important;
   --input: #2B2B2B99 !important;
   --topbar: #202020CC !important;
+  --spice-highlight-elevated: #FFFFFF11 !important;
 }
 
 /* This is practically a fork from my original mica theme. */
@@ -206,8 +207,7 @@ dialog button *,
   max-height: max-content !important;
 }
 
-.Dropdown-option:hover,
-[data-encore-id="popover"] > * > *:hover{
+.Dropdown-option:hover{
   background: #343434 !important;
 }
 
@@ -343,7 +343,7 @@ body,
   --popout: #EEEEEE !important;
   --input: #DDDDDD99 !important;
   --topbar: #FFFFFFCC !important;
-
+  --spice-highlight-elevated: #CCCCCC !important;
 }
 
 :root *{
@@ -366,10 +366,8 @@ svg{
   background: #DDDDDD !important;
 }
 
-.Dropdown-control:hover,
-.main-contextMenu-menuItem:hover,
-[data-encore-id="popover"] > * > *:hover{
-  background: #CCCCCC !important;
+.Dropdown-control:hover{
+  background: #DDDDDD !important;
 }
 
 .marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id="marketplace-settings-button"] > *) > *{
