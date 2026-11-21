@@ -22,7 +22,7 @@ body,
   --center-ui-bg: #00000077 !important;
   --center-ui-border: none !important;
   --popout: #202020 !important;
-  --input: #2B2B2B99 !important;
+  --input: #202020 !important;
   --topbar: #202020CC !important;
   --spice-highlight-elevated: #FFFFFF11 !important;
 }
@@ -267,7 +267,6 @@ input:not([data-testid*="search-modal-input"], *:has(> canvas) *, .SpicyLyricsMo
 textarea,
 .marketplace-code-editor{
   background: var(--input) !important;
-  backdrop-filter: blur(10px) !important;
   border: var(--center-ui-border) !important;
 }
 
@@ -342,7 +341,7 @@ body,
   --center-ui-bg: transparent !important;
   --center-ui-border: 1px solid #00000022 !important;
   --popout: #EEEEEE !important;
-  --input: #DDDDDD99 !important;
+  --input: #DDDDDD !important;
   --topbar: #FFFFFFCC !important;
   --spice-highlight-elevated: #CCCCCC !important;
 }
