@@ -4,29 +4,35 @@ body,
 [class*="encore-"],
 [class*="encore-"] * {
   --currentcolor: var(--spice-subtext) !important;
-  --spice-button-active: var(--spice-text) !important;
-  --spice-main-transition: none !important;
-  --spice-sidebar: none !important;
-  --spice-main: none !important;
-  --background-noise: #00000099 !important;
-  --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
   --encore-icon-fill: var(--currentcolor) !important;
   --text-bright-accent: var(--currentcolor) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
+  --background-base: transparent !important;
+  --background-noise: #00000099 !important;
   --background-highlight: #00000044 !important;
+  --background-elevated-press: #FFFFFF33 !important;
+  --encore-overlay-box-shadow: 0 0px 0px !important;
+  --encore-icon-fill: var(--currentcolor) !important;
+  --text-bright-accent: var(--currentcolor) !important;
+  --carousel-start-chevron-gradient: none !important;
+  --essential-bright-accent: var(--spice-text) !important;
+  --spice-main: none !important;
+  --spice-main-transition: none !important;
+  --spice-sidebar: none !important;
   --spice-player: #00000011 !important;
   --spice-card: #00000099 !important;
   --spice-tab-active: #00000099 !important;
+  --spice-button: var(--spice-subtext) !important;
+  --spice-button-active: var(--spice-text) !important;
+  --spice-main-elevated: transparent !important;
+  --spice-highlight-elevated: #FFFFFF11 !important;
   --center-ui-bg: #00000077 !important;
   --center-ui-border: none !important;
   --popout: #202020 !important;
   --input: #00000077 !important;
   --topbar: #202020CC !important;
-  --spice-highlight-elevated: #FFFFFF11 !important;
-  --background-base: transparent !important;
-  --spice-main-elevated: transparent !important;
 }
 
 /* This is practically a fork from my original mica theme. */
@@ -318,21 +324,20 @@ body,
 [class*="encore-"],
 [class*="encore-"] * {
   --background-noise: #FFFFFF99 !important;
+  --background-highlight: #AAAAAA99 !important;
+  --background-elevated-press: #CCCCCC !important;
   --spice-text: #121212 !important;
   --spice-subtext: #535353 !important;
-  --text-base: #121212 !important;
   --spice-card: #DDDDDD !important;
   --spice-rgb-text: #2C2C2C !important;
   --spice-player: #FFFFFF !important;
   --spice-tab-active: #DDDDDD !important;
-  --background-highlight: #AAAAAA99 !important;
-  --spice-main-elevated: #DDDDDD !important;
+  --spice-highlight-elevated: #CCCCCC !important;
   --center-ui-bg: transparent !important;
   --center-ui-border: 1px solid #00000022 !important;
   --popout: #EEEEEE !important;
   --input: #FFFFFF99 !important;
   --topbar: #FFFFFFCC !important;
-  --spice-highlight-elevated: #CCCCCC !important;
 }
 
 :root *{
