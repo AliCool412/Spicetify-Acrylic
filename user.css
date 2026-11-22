@@ -378,6 +378,13 @@ select optgroup {
   color: #000000 !important;
 }
 
+[src*="equaliser"],
+[class*="button__icon-wrapper"],
+[class*="equaliser"],
+[data-testid="settings-page"] canvas{
+  filter: brightness(0%) !important;
+}
+
 /* This above has the overrides for light mode */
 
 }
