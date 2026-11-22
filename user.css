@@ -322,6 +322,9 @@ input[type="checkbox"] + *:hover{
 input[type="checkbox"] + *{
   background: #AAAAAA99 !important;
 }
+.main-dropDown-dropDown{
+  background: var(--background-highlight) !important;
+}
 
 /* This is for toggles */
 
