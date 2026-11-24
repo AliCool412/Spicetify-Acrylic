@@ -257,7 +257,7 @@ svg:hover,
 
 /* This is to hide the NPV Peek */
 
-:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-imageContainer *, .progress-bar *, .main-entityHeader-image, .main-entityHeader-image *, .main-entityHeader-shadow, label span, [data-testid="action-bar-row"] [class*="legacy-button-primary"], [data-testid="player-controls"] [class*="legacy-button-primary"]){
+:root *:not([data-testid="user-widget-link"], [data-testid="user-widget-link"] *, .main-entityHeader-metaDataText, .main-entityHeader-metaDataText *, .main-entityHeader-imageContainer *, .progress-bar *, .main-entityHeader-image, .main-entityHeader-image *, .main-entityHeader-shadow, label span, [data-testid="action-bar-row"] [class*="legacy-button-primary"], * [class*="legacy-button-primary"]){
   border-radius: 0px !important;
 }
 
