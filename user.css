@@ -20,6 +20,7 @@ body,
   --text-bright-accent: var(--currentcolor) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
+  --section-background-base: var(--spice-highlight-elevated) !important;
   --spice-main: none !important;
   --spice-main-transition: none !important;
   --spice-sidebar: none !important;
@@ -28,8 +29,8 @@ body,
   --spice-tab-active: #00000099 !important;
   --spice-button: var(--spice-subtext) !important;
   --spice-button-active: var(--spice-text) !important;
-  --spice-main-elevated: var(--popout) !important;
-  --spice-highlight-elevated: #242424 !important;
+  --spice-main-elevated: transparent !important;
+  --spice-highlight-elevated: #FFFFFF11 !important;
   --center-ui-bg: #00000077 !important;
   --center-ui-border: none !important;
   --popout: #202020 !important;
@@ -68,6 +69,7 @@ dialog .encore-light-theme,
 .Dropdown-menu,
 [data-encore-id="popover"],
 .main-actionBar-ActionBarContainer,
+[data-testid="progress-label"],
 [id="search-dropdown"] > :nth-child(1){
   background: var(--popout) !important;
   border-radius: 0px !important;
