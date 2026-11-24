@@ -29,7 +29,7 @@ body,
   --spice-button: var(--spice-subtext) !important;
   --spice-button-active: var(--spice-text) !important;
   --spice-main-elevated: var(--popout) !important;
-  --spice-highlight-elevated: #FFFFFF11 !important;
+  --spice-highlight-elevated: #242424 !important;
   --center-ui-bg: #00000077 !important;
   --center-ui-border: none !important;
   --popout: #202020 !important;
