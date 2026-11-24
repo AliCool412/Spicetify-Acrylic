@@ -349,7 +349,7 @@ body,
   --spice-player: #FFFFFF !important;
   --spice-tab-active: #DDDDDD !important;
   --spice-highlight-elevated: #CCCCCC !important;
-  --center-ui-bg: transparent !important;
+  --center-ui-bg: #FFFFFF22 !important;
   --center-ui-border: 1px solid #00000022 !important;
   --popout: #EEEEEE !important;
   --input: #FFFFFF99 !important;
